@@ -8,7 +8,7 @@ pipeline{
         pollSCM(" * * * * *")
     }
     stages{
-        stage('Prep'){
+        /* stage('Prep'){
             steps{
                 cleanWs()
             }
@@ -18,7 +18,7 @@ pipeline{
                 sh "echo checking out code"
                 checkout scm
             }
-        }
+        } */
         stage('Complie'){
             steps{
                 sh "mvn clean compile"
