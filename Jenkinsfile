@@ -41,10 +41,6 @@ pipeline{
                 } 
             }
         }
-        post{
-            always{
-                echo "LOoks Good"
-            }
-        }
+        
     }
 }
