@@ -42,20 +42,21 @@ pipeline{
             }
         }
         post {
-        always {
+            always {
             echo 'JENKINS PIPELINE'
-        }
-        success {
+            }
+            success {
             echo 'JENKINS PIPELINE SUCCESSFUL'
-        }
-        failure {
+            }
+            failure {
             echo 'JENKINS PIPELINE FAILED'
-        }
-        unstable {
+            }
+            unstable {
             echo 'JENKINS PIPELINE WAS MARKED AS UNSTABLE'
-        }
-        changed {
+            }
+            changed {
             echo 'JENKINS PIPELINE STATUS HAS CHANGED SINCE LAST EXECUTION'
+            }
         }
     }
 }
